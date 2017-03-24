@@ -1,0 +1,53 @@
+body{
+  padding: 0;
+  margin: 0;
+  background-color: $LIGHT_GREY;
+}
+
+#preloader{
+  display: block;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  border: 1px solid #efefef;
+}
+
+#preloader > img{
+  width:60px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left: -30px;
+  margin-top:-30px;
+}
+
+#container{
+  display: block;
+  position: relative;
+  width:$BANNER_WIDTH;
+  height:$BANNER_HEIGHT;
+  background-color: white;
+  margin: auto;
+}
+
+#banner{
+  display: none;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  border: 1px solid #efefef;
+}
+
+.frame{
+  display: table;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  text-align: center;
+  opacity: 0;
+}
+
+.frame > .inner{
+  display: table-cell;
+  vertical-align: middle;
+}

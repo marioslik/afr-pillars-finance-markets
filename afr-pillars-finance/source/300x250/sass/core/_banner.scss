@@ -1,0 +1,449 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $LIGHT_GREY;
+}
+
+#preloader{
+    display: block;
+    position: absolute;
+    width:($WIDTH - 2)+px;
+    height:($HEIGHT - 2)+px;
+    border: 1px solid #efefef;
+    background: #0089cf;
+}
+
+#preloader > img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#preloader #preloader-svg {
+    width: 30px;
+    height: 30px;
+    stroke: rgb(255,255,255);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#container{
+  display: block;
+  position: relative;
+  width:$BANNER_WIDTH;
+  height:$BANNER_HEIGHT;
+  background-color: white;
+  margin: auto;
+  overflow: hidden;
+}
+
+#banner{
+  display: none;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+
+.frame{
+  display: table;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  text-align: center;
+  color:#ffffff;
+}
+
+.frame > .inner{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// Panel container
+// ======================
+.panel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 298px;
+    height: 248px;
+    z-index: 1300;
+    overflow: hidden;
+
+    .panel {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    .panel-01 {
+        z-index: 304;
+        background: $AFR_BLUE;
+        opacity: 0;
+        img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+            stroke: rgb(255,255,255);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    .panel-02 {
+        z-index: 300;
+        background: $AFR_BLUE;
+        opacity: 1;
+    }
+}
+
+
+// Frame 02
+// ======================
+
+.frame-2 {
+    position: absolute;
+    top: 18px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        position: absolute;
+        top:0;
+        left:20px;
+        font-family: 'Proxima Nova Light';
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.1;
+    }
+}
+
+#canvas {
+    position:absolute;
+    margin-left : 50%;
+    left: -410px;
+    z-index: 1000;
+    top:-190px;
+}
+
+#dust-container {
+    position: absolute;
+    width:($WIDTH - 2)+px;
+    height:($HEIGHT - 2)+px;
+    z-index: 1000;
+    top:20px;
+    left:0px;
+}
+
+.dot{
+  width:2px;
+  height:2px;
+  position:absolute;
+  background-color:#8a837c;
+  box-shadow:none;
+  border-radius: 20px;
+}
+
+.smoke-image {
+    display: none;
+}
+
+.smoke-container {
+    position: absolute;
+    z-index: 1000;
+    top:30px;
+}
+
+.smoke-back, .smoke-middle, .smoke-front {
+    position: absolute;
+    top:0;
+}
+
+#bull {
+    position: absolute;
+    right:-100px;
+}
+
+#matador {
+    position: absolute;
+}
+
+.dg.ac {
+  display: none !important;
+}
+
+// Frame 03
+// ======================
+
+.frame-3 {
+    position: absolute;
+    top: 18px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        position: absolute;
+        top:0;
+        left:20px;
+        font-family: 'Proxima Nova Light';
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.1;
+    }
+}
+
+
+
+
+// Frame 04
+// ======================
+
+.frame-4 {
+    position: absolute;
+    top: 35px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        font-family: 'Proxima Nova Light';
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+// Frame 05
+// ======================
+
+.frame-5 {
+    position: absolute;
+    top: 24px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        font-family: 'Proxima Nova Light';
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+// Button
+// ======================
+.button {
+    position: absolute;
+    width: 220px;
+    left: 40px;
+    top: 100px;
+    z-index: 1500;
+    height: 40px;
+    border-radius: 2px;
+    background: #00537d;
+    p {
+        margin: 0;
+        color: #FFF;
+        position: absolute;
+        font-family: 'Proxima Nova Light';
+        top: 11px;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+    }
+    .arrow-circle {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: #083a54;
+        left: 171px;
+        top: 12px;
+    }
+    .cta-arrow {
+        width: 6px;
+        height: 6px;
+        border: 1px solid #FFF;
+        position: absolute;
+        border-bottom: none;
+        border-left: none;
+        top: 5px;
+        left: 4px;
+    }
+}
+
+
+
+
+// Logo container
+// ======================
+
+#fr-logo-intro, #fr-logo-preloader {
+  display: block;
+  position: absolute;
+  top: 100px;
+  z-index: 1305;
+  width: 240px;
+  left: 30px;
+  opacity:0;
+}
+
+#fr-logo-preloader {
+  opacity: 1;
+}
+
+#logo-lockup-intro, #logo-lockup-preloader {
+  .fr-logo-path {
+    fill: #ffffff;
+  }
+}
+
+#tag-line-intro, #tag-line-preloader {
+
+  .fr-logo-path {
+    fill: #ffffff;
+  }
+}
+
+.logo-container {
+    position: absolute;
+    z-index: 1300;
+    bottom: -1px;
+    left: 0;
+    width: 300px;
+    height: 84px;
+    background: #FFFFFF;
+    opacity: 0;
+    .logo-bg-blue {
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 58px;
+        background: #0089cf;
+    }
+    .logo-bg-white {
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 58px;
+        background: #ffffff;
+    }
+}
+.fr-logo-path {
+    fill:$AFR_BLUE;
+}
+
+#fr-logo {
+    position: absolute;
+    z-index: 1700;
+    width: 244px;
+    height: 47px;
+    left: 30px;
+    top: 210px;
+    opacity: 0;
+}
+
+// Background images
+// ======================
+.bg-image {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 130;
+    background: #0089cf;
+    width: 300px;
+    height: 250px;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bg-image-01 {
+        z-index: 10;
+    }
+    .bg-image-02 {
+        z-index: 9;
+    }
+    .bg-image-03 {
+        z-index: 8;
+    }
+}
+
+.feature {
+    position: absolute;
+    top: 230px;
+    left: 0px;
+    width: 300px;
+    z-index: 1280;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+}
+
+.feature-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.house {
+    position: absolute;
+    top: -200px;
+    left: 87px;
+    opacity: 0;
+    width: 100px;
+    z-index: 2;
+}
+
+.roof {
+    position: absolute;
+    top: -240px;
+    left: 93px;
+    z-index: 3;
+    width: 86px;
+    opacity: 0;
+}
+
+.tree {
+    position: absolute;
+    top: -240px;
+    left: 144px;
+    z-index: 0;
+    width: 60px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: 50% 100%;
+}
+
+
+// Background images
+// ======================
+#video {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    z-index: 200;
+}
