@@ -19,6 +19,7 @@ function init() {
 
     // Init CSS
     // =========================
+    TweenMax.set('.feature', {x:0, y:0, display:'block'})
     TweenMax.set('.logo-container', {y:26});
     TweenMax.set('.cta-arrow', {rotation:45, transformOrigin:'50% 50%'});
     TweenMax.set('.panel-03', {x:-300});
