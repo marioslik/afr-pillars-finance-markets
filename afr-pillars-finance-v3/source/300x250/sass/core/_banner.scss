@@ -1,0 +1,435 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: $LIGHT_GREY;
+}
+
+#preloader{
+    display: block;
+    position: absolute;
+    width:($WIDTH - 2)+px;
+    height:($HEIGHT - 2)+px;
+    border: 1px solid #efefef;
+    background: #0089cf;
+}
+
+#preloader > img{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#preloader #preloader-svg {
+    width: 30px;
+    height: 30px;
+    stroke: rgb(255,255,255);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#container{
+  display: block;
+  position: relative;
+  width:$BANNER_WIDTH;
+  height:$BANNER_HEIGHT;
+  background-color: white;
+  margin: auto;
+  overflow: hidden;
+}
+
+#banner{
+  display: none;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  border: 1px solid #efefef;
+  overflow: hidden;
+}
+
+.frame{
+  display: table;
+  position: absolute;
+  width:($WIDTH - 2)+px;
+  height:($HEIGHT - 2)+px;
+  text-align: center;
+  color:#ffffff;
+}
+
+.frame > .inner{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// Panel container
+// ======================
+.panel-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 298px;
+    height: 248px;
+    z-index: 1300;
+    overflow: hidden;
+
+    .panel {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+    }
+    .panel-01 {
+        z-index: 304;
+        background: $AFR_BLUE;
+        opacity: 0;
+        img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        svg {
+            width: 30px;
+            height: 30px;
+            stroke: rgb(255,255,255);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    .panel-02 {
+        z-index: 305;
+        background: $AFR_BLUE;
+        opacity: 0;
+    }
+
+    .panel-03 {
+        z-index: 302;
+        background: #0089cf;
+        img {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    .panel-04 {
+        z-index: 301;
+        background: #cedfe9;
+        opacity: .8;
+    }
+    .panel-05 {
+        z-index: 300;
+        background: #b1c6d1;
+        opacity: .8;
+    }
+}
+
+
+// Frame 02
+// ======================
+
+.frame-2 {
+    position: absolute;
+    top: 18px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        position: absolute;
+        top:0;
+        left:20px;
+        font-family: 'Proxima Nova Light';
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.1;
+    }
+}
+
+// Frame 03
+// ======================
+
+.frame-3 {
+    position: absolute;
+    top: 18px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        position: absolute;
+        top:0;
+        left:20px;
+        font-family: 'Proxima Nova Light';
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.1;
+    }
+}
+
+// Frame 04
+// ======================
+
+.frame-4 {
+    position: absolute;
+    top: 60px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        font-family: 'Proxima Nova Light';
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+// Frame 05
+// ======================
+
+.frame-5 {
+    position: absolute;
+    top: 24px;
+    z-index: 1400;
+    p {
+        margin: 0;
+        font-family: 'Proxima Nova Light';
+        font-size: 28px;
+        line-height: 30px;
+    }
+}
+
+// Button
+// ======================
+.button {
+    position: absolute;
+    width: 180px;
+    left: 55px;
+    top: 100px;
+    z-index: 1500;
+    height: 40px;
+    border-radius: 40px;
+    background: transparent;
+    transition: background .2s ease-in-out,
+                border .2s ease-in-out,
+                color .2s ease-in-out;
+    border: 2px solid #fff;
+    p {
+        margin: 0;
+        color: #FFF;
+        position: absolute;
+        font-family: 'Proxima Nova Light';
+        left: 0;
+        top: 11px;
+        width: 100%;
+        text-align: center;
+        font-size: 17px;
+        transition: left .2s ease-in-out;
+    }
+    .arrow-circle {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        // background: #083a54;
+        left: 138px;
+        top: 12px;
+        opacity: 0;
+        transition: opacity .2s ease-in-out,
+                    left .2s ease-in-out;
+    }
+    .cta-arrow {
+        width: 6px;
+        height: 6px;
+        border: 1px solid #FFF;
+        position: absolute;
+        border-bottom: none;
+        border-left: none;
+        top: 5px;
+        left: 4px;
+    }
+}
+
+#banner:hover .button {
+    background: #00537d;
+    border: 2px solid transparent;
+    p {
+        color: #FFF;
+        left: -6px;
+    }
+    .arrow-circle {
+        opacity:1;
+        left: 143px;
+    }
+}
+
+
+
+
+// Logo container
+// ======================
+
+#fr-logo-intro, #fr-logo-preloader {
+  display: block;
+  position: absolute;
+  top: 100px;
+  z-index: 1305;
+  width: 240px;
+  left: 30px;
+  opacity:0;
+}
+
+#fr-logo-preloader {
+  opacity: 1;
+}
+
+#logo-lockup-intro, #logo-lockup-preloader {
+  .fr-logo-path {
+    fill: #ffffff;
+  }
+}
+
+#tag-line-intro, #tag-line-preloader {
+
+  .fr-logo-path {
+    fill: #ffffff;
+  }
+}
+
+.logo-container {
+    position: absolute;
+    z-index: 1300;
+    bottom: -1px;
+    left: 0;
+    width: 300px;
+    height: 84px;
+    background: #FFFFFF;
+    opacity: 0;
+    .logo-bg-blue {
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 58px;
+        background: #0089cf;
+    }
+    .logo-bg-white {
+        position: absolute;
+        z-index: 40;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 58px;
+        background: #ffffff;
+    }
+}
+.fr-logo-path {
+    fill:$AFR_BLUE;
+}
+
+#fr-logo {
+    position: absolute;
+    z-index: 1700;
+    width: 244px;
+    height: 47px;
+    left: 30px;
+    top: 210px;
+    opacity: 0;
+}
+
+// Background images
+// ======================
+.bg-image {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 130;
+    background: #0089cf;
+    width: 300px;
+    height: 250px;
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bg-image-01 {
+        z-index: 10;
+    }
+    .bg-image-02 {
+        z-index: 9;
+    }
+    .bg-image-03 {
+        z-index: 8;
+    }
+}
+
+.feature {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 250px;
+    z-index: 301;
+}
+
+.feature-image {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+#bull-extra {
+    position: absolute;
+    top: 62px;
+    width: 302px;
+    left: -3px;
+
+    .cls-1 {
+      stroke: #0089d0;
+    }
+}
+
+#bull-horns {
+  position: absolute;
+  top: 65px;
+
+  .cls-1 {
+    stroke: #fff;
+  }
+}
+
+#bull-bottom {
+  position: absolute;
+  top: 104px;
+  left: -1px;
+}
+
+// Background images
+// ======================
+#video {
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    top: 0px;
+    left: 0px;
+    margin: auto;
+    z-index: 200;
+}

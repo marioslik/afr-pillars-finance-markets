@@ -58,10 +58,10 @@ function init() {
     $('.bg-image-01').attr('src', bgImage01);
     $('.bull-image').attr('src', bullImage);
     $('.matador-image').attr('src', matadorImage);
-    $('.smoke-image').attr('src', smokeImage);
-    $('.smoke-back').attr('src', smokeBack);
+    //$('.smoke-image').attr('src', smokeImage);
+    //$('.smoke-back').attr('src', smokeBack);
     //$('.smoke-middle').attr('src', smokeMiddle);
-    $('.smoke-front').attr('src', smokeFront);
+    //$('.smoke-front').attr('src', smokeFront);
 
 
 
@@ -371,13 +371,13 @@ function start() {
     }
 
     function animateSmoke(){
-        TweenMax.to('.smoke-back', 30, {x:300});
+        //TweenMax.to('.smoke-back', 30, {x:300});
         // TweenMax.to('.smoke-middle', 50, {x:-600});
         //TweenMax.to('.smoke-front', 100, {x:-400});
     }
 
     function stopSmokeAnimation(){
-        TweenMax.killTweensOf('.smoke-back');
+        //TweenMax.killTweensOf('.smoke-back');
         // TweenMax.killTweensOf('.smoke-middle');
         //TweenMax.killTweensOf('.smoke-front');
     }
