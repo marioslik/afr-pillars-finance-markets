@@ -41,8 +41,8 @@ function init() {
 
     $('.frame-2 p').html('MARKET BULLS<br>CHARGE AHEAD');
     $('.frame-3 p').html('GLOBAL MARKETS<br>TAKE SHAPE');
-    $('.frame-4 p').html('MASTER THE<br>MARKETS<br>WITH THE AFR');
-    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH');
+    $('.frame-4 p').html('MASTER THE<br>MARKETS<br>WITH THE AFR.');
+    $('.frame-5 p').html('TRY THE AFR<br>FREE FOR 1 MONTH.');
 
     $('.cta-copy').html('Find out more');
 
